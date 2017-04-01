@@ -1,0 +1,126 @@
+
+html, body {
+    font-family: Roboto;
+    min-height: 100%;
+    margin: 0;
+}
+
+/* HEADER */
+
+.header {
+    background-color: black;
+}
+
+@media (min-width: 500px) {
+    .header {
+        background: url("./bilder/header.jpg") no-repeat center;
+        background-size: cover;
+        min-height: 400px;
+    }
+
+    .logo {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/* CONTENT */
+
+.content {
+    padding-bottom: 75px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.bilder {
+    margin-top: 40px;
+}
+
+.bilde {
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.bilde span {
+    align-self: center;
+    margin: 10px;
+}
+
+.bilde img {
+    width: 90%;
+    align-self: center;
+}
+
+@media (min-width: 750px) {
+
+    .bilde {
+        flex-direction: row;
+        text-align: inherit;
+    }
+
+    .bilde img {
+        width: 580px;
+        height: 435px;
+    }
+
+    .bilde:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: black;
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+}
+
+.footer a {
+    color: white;
+    margin: 5px;
+}
+
+.spacer{
+    width: 50px;
+}
+
+.facebook-logo {
+    background: url("./bilder/fb_hvit.png") no-repeat left;
+    background-size: 16px;
+    padding-left: 20px;
+}
+
+.email-logo {
+    background: url("./bilder/email.png") no-repeat left;
+    background-size: 16px;
+    padding-left: 20px;
+}
+
+
+.footer .kort-tekst {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .footer .full-tekst {
+        display: none;
+    }
+
+    .footer .kort-tekst {
+        display: inline;
+    }
+}
